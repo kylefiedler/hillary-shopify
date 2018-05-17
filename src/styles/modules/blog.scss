@@ -1,0 +1,44 @@
+.article-preview {
+  margin-bottom: 4rem;
+
+  @media screen and (min-width: 800px) {
+    display: flex;
+  }
+}
+
+.article-preview__image {
+  padding-right: 2rem;
+
+  @media screen and (min-width: 800px) {
+    width: 50%;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+}
+
+.article-preview__content {
+  padding-top: 2rem;
+
+  @media screen and (min-width: 800px) {
+    max-width: 50%;
+  }
+}
+
+.article-preview__title {
+  font-family: $font-stack-header;
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 0;
+
+  a {
+    color: $color-body-text;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $pink;
+    }
+  }
+}

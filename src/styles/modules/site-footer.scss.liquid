@@ -1,0 +1,151 @@
+.footer {
+  padding-top: 2rem;
+  border-top: 1px solid gold;
+  margin-top: 2rem;
+
+  h1 {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .hillary-logo {
+    width: 325px;
+    height: 141px;
+    fill: unset;
+
+    g {
+      fill: unset;
+    }
+  }
+}
+
+.store-hours {
+  padding: 2rem 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    @media screen and (min-width: 800px) {
+      width: 765px;
+      margin: 0 auto;
+    }
+  }
+
+  li {
+    padding: 15px;
+    text-align: center;
+
+    @media screen and (min-width: 800px) {
+      text-align: left;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
+
+.newsletter {
+  background-image: url({{ 'leopard.png' | asset_url }});
+  padding: 2rem 1.5rem;
+
+  @media screen and (min-width: 800px) {
+    padding: 6rem 4rem;
+  }
+
+  .input-group {
+    margin-bottom: 2rem;
+
+    input[type="email"] {
+      display: inline-block;
+      width: 50%;
+    }
+    
+    .mce_inline_error {
+      margin-top: 1rem;
+      color: $pink;
+    }
+  }
+}
+
+.newsletter__inner {
+  background-color: #fff;
+  border: 1px solid $gold;
+  margin: 0 auto;
+  max-width: 950px;
+  text-align: center;
+  padding: 1.5rem;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 8px auto 0;
+    max-width: 500px;
+  }
+}
+
+.footer-nav {
+  text-align: center;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      padding: 0 10px;
+    }
+  }
+}
+
+.secondary-nav {
+  margin-bottom: 6rem;
+
+  a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: $light-gray;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $pink;
+    }
+  }
+}
+
+.primary-nav {
+  margin-top: 6rem;
+
+  a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: $font-stack-header;
+    color: $color-body-text;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $pink;
+    }
+  }
+}
+
+.social-nav {
+  svg {
+    fill: $gold;
+  }
+}
+
+.footer-logo {
+  margin-top: 6rem;
+
+  svg {
+    @media screen and (max-width: 400px) {
+      width: 100%;
+    }
+  }
+}

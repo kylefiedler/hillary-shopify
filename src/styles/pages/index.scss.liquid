@@ -1,0 +1,134 @@
+.underline {
+  background-image: url({{ 'underline.png' | asset_url }});
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.hero__description {
+  position: relative;
+
+  @media screen and (min-width: 850px) {
+    margin-left: 50%;
+  }
+
+  p {
+    padding-right: 1.5rem;
+  }
+}
+
+.hero__veritcal-title {
+  font-family: $font-stack-header;
+  font-size: 14px;
+  font-weight: normal;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  right: -210px;
+  top: 180px;
+}
+
+.hero__image {
+  margin-top: -3rem;
+  margin-left: -60px;
+  margin-bottom: 5rem;
+
+  @media screen and (min-width: 850px) {
+    width: 75%;
+    margin-top: -181px;
+  }
+}
+
+.hero__image--desktop {
+  @media screen and (max-width: 540px) {
+    display: none;
+  }
+}
+
+.hero__image--mobile {
+  @media screen and (min-width: 539px) {
+    display: none;
+  }
+}
+
+.new-arrivals {
+  background-color: $pink;
+  padding-bottom: 2rem;
+
+  h2 {
+    @media screen and (min-width: 930px) {
+    display: inline-block;
+    }
+  }
+}
+
+.new-arrivals__title {
+  color: #fff;
+  margin-right: 2rem;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 930px) {
+    display: inline-block;
+  }
+}
+
+.new-arrivals__link {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(#fff, 0.5);
+  }
+}
+
+.new-arrivals__image {
+  text-align: center;
+  pointer-events: none;
+
+  @media screen and (min-width: 700px) {
+    margin-top: -6rem;
+  }
+}
+
+.departments {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.departments__list {
+  list-style: none;
+  padding: 0;
+
+  @media screen and (min-width: 700px) {
+    display: flex;
+  }
+
+  li {
+    margin: 0;
+  flex-grow: 1;
+    text-align: center;
+    padding: 15px;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      h4 {
+        color: $pink;
+      }
+    }
+
+    h4 {
+      color: $color-body-text;
+    }
+  }
+}

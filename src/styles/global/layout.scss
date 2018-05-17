@@ -2,6 +2,8 @@
 body,
 html {
   background-color: $color-body;
+  font-family: $font-stack-body;
+  font-weight: 300;
 }
 
 .page-width {
@@ -9,4 +11,51 @@ html {
   max-width: $width-site;
   padding: 0 $gutter;
   margin: 0 auto;
+}
+
+.page-width--article {
+  max-width: $width-site * 0.65;
+  margin-bottom: 4rem;
+  line-height: 1.6;
+
+  .social-sharing {
+    margin-top: 2rem;
+  }
+}
+
+h1 {
+  font-family: $font-stack-header;
+  font-size: 64px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: $font-stack-body;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $light-gray;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-family: $font-stack-header;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: $pink;
+
+  &:focus,
+  &:hover {
+    color: darken($pink, 20%);
+  }
 }

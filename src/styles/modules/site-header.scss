@@ -1,9 +1,52 @@
 /*================ Site Header ================*/
-.site-logo {
-  display: block;
+.site-header {
+  margin-top: 1rem;
 
-  img {
-    display: block;
-    width: 100%;
+  @media screen and (min-width: 1070px) {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width: 1070px) {
+      text-align: right;
+    }
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+
+  .secondary-nav {
+    margin-bottom: 1rem;
+  }
+}
+
+.all-navigation {
+  flex-grow: 1;
+
+  @media screen and (max-width: 1070px) {
+    margin-bottom: 3rem;
+  }
+}
+
+.site-logo {
+  svg {
+    @media screen and (max-width: 400px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1070px) {
+    margin-bottom: 1.5rem;
+    text-align: center;
   }
 }

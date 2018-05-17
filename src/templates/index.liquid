@@ -1,1 +1,48 @@
-{{ content_for_index }}
+<section class="hero page-width">
+  <h2>Hillary brings New York fashion to New Jersey! </h2>
+  <h1>Dress for your next <span class="underline">amazing</span> moment</h1>
+
+  <div class="hero__description">
+    <p>Located in the heart of Warren, Hillary's Fashion Boutique is a well known boutique clothing shop that offers women a place to find unique and timeless fashion pieces. Founded by Hillary Scharf in 1996, we sell the latest fashion trends to customers across the map. Receiving new merchandise daily, we offer free personalized shopping services as well as on premise alterations.</p>
+    <h3 class="hero__veritcal-title">Life is too short to wear bad clothing</h3>
+  </div>
+</section>
+
+<section class="new-arrivals">
+  <header class="page-width">
+    <img src="{{ 'hero.png' | asset_url }}" alt="" class="hero__image hero__image--desktop">
+    <img src="{{ 'hero-mobile.png' | asset_url }}" alt="" class="hero__image hero__image--mobile">
+    <h1 class="new-arrivals__title">New Arrivals</h1>
+    <h2><a href="/collections/new-arrivals" class="new-arrivals__link">See all new Arrivals</a></h2>
+  </header>
+  <div class="new-arrivals__image">
+    <img src="{{ 'new.png' | asset_url }}" alt="" class="hero__image--desktop">
+    <img src="{{ 'new-mobile.png' | asset_url }}" alt="" class="hero__image--mobile">
+  </div>
+</section>
+
+<section class="page-width departments">
+  <ul class="departments__list">
+    <li>
+      <a href="collections/accessories">
+        <img src="{{ 'accessories.png' | asset_url }}" alt="" class="departments__image">
+        <h2>Shop Our</h2>
+        <h4>Accessories</h4>
+      </a>
+    </li>
+    <li>
+      <a href="collections/womens">
+        <img src="{{ 'womens.png' | asset_url }}" alt="" class="departments__image">
+        <h2>See our</h2>
+        <h4>Womens</h4>
+      </a>
+    </li>
+    <li>
+      <a href="collections/teen">
+        <img src="{{ 'teen.png' | asset_url }}" alt="" class="departments__image">
+        <h2>Dive into</h2>
+        <h4>Teen</h4>
+      </a>
+    </li>
+  </ul>
+</section>

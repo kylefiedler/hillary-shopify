@@ -1,5 +1,5 @@
 {% comment %}
-  When a comment is submitted, the browser is redirected to a page that includes 
+  When a comment is submitted, the browser is redirected to a page that includes
   the new comment id in its URL.
   #comments is a required ID and is used as an anchor link by Shopify.
 {% endcomment %}
@@ -13,16 +13,16 @@
   {% assign number_of_comments = article.comments_count | plus: 1 %}
 {% endif %}
 
-<article role="article" itemscope itemtype="http://schema.org/Article">
+<article role="article" itemscope itemtype="http://schema.org/Article" class="page-width page-width--article">
 
-  {% if article.image %}
+  <!-- {% if article.image %}
     {{ article | img_url: '1024x1024' | img_tag: article.title }}
-  {% endif %}
+  {% endif %} -->
 
   <header role="banner">
+    <h2>{{ 'blogs.article.author_on_date_html' | t: author: article.author, date: date }}</h2>
     <h1>{{ article.title }}</h1>
     {% capture date %}{{ article.published_at | time_tag: format: 'month_day_year' }}{% endcapture %}
-    <p>{{ 'blogs.article.author_on_date_html' | t: author: article.author, date: date }}</p>
   </header>
 
   <div class="rte" itemprop="articleBody">

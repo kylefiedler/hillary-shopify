@@ -1,8 +1,10 @@
+<div class="page-width">
+
 {% if cart.item_count > 0 %}
   <h1>{{ 'cart.general.title' | t }}</h1>
 
   <form action="/cart" method="post" novalidate>
-    <table class="responsive-table">
+    <table class="responsive-table cart-table">
       <thead class="small--hide">
         <tr>
           <th colspan="2">{{ 'cart.label.product' | t }}</th>
@@ -92,12 +94,14 @@
     </table>
 
     {% if settings.cart_notes_enable %}
+      <div class="input-group">
       <label for="CartSpecialInstructions">{{ 'cart.general.note' | t }}</label>
       <textarea name="note" id="CartSpecialInstructions">{{ cart.note }}</textarea>
+      </div>
     {% endif %}
 
-    <p>{{ 'cart.general.subtotal' | t }}</p>
-    <p>{{ cart.total_price | money }}</p>
+    <h2>{{ 'cart.general.subtotal' | t }}</h2>
+    <h4>{{ cart.total_price | money }}</h4>
     {% if cart.total_discounts > 0 %}
       <p>{{ 'cart.general.savings' | t }} {{ cart.total_discounts | money }}</p>
     {% endif %}
@@ -126,3 +130,4 @@
     <p>{{ 'cart.general.cookies_required' | t }}</p>
   </div>
 {% endif %}
+</div>

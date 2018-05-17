@@ -1,0 +1,48 @@
+.contact {
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 800px) {
+    display: flex;
+  }
+}
+
+.contact__form {
+  padding-right: 2rem;
+
+  @media screen and (min-width: 800px) {
+    width: 50%;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+}
+
+.contact__content {
+  padding-top: 2rem;
+
+  @media screen and (min-width: 800px) {
+    max-width: 50%;
+  }
+}
+
+.input-group {
+  display: block;
+  margin-top: 1.5rem;
+
+  label {
+    @extend h4;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  textarea,
+  input[type="number"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    display: block;
+  }
+
+}

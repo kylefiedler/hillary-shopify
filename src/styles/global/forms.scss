@@ -6,12 +6,15 @@
 input,
 textarea,
 select {
-  border: 1px solid $color-border;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
   border-radius: 0;
   max-width: 100%;
+  font-family: $font-stack-body;
+  font-weight: 300;
 
   &:focus {
-    // You should add some focus styles
+    border-color: $pink;
   }
 
   &[disabled] {
@@ -59,5 +62,24 @@ textarea {
     border-color: $color-error;
     background-color: $color-error-bg;
     color: $color-error;
+  }
+}
+
+input[type="submit"],
+button {
+  border: none;
+  background-color: $pink;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: $font-stack-header;
+  font-size: 18px;
+  vertical-align: bottom;
+
+  &:focus,
+  &:hover {
+    background-color: darken($pink, 15%);
   }
 }

@@ -1,0 +1,11 @@
+.cart-table {
+  border: solid 1px $color-border;
+  border-collapse: collapse;
+  width: 100%;
+
+  td,
+  th {
+    border: solid 1px $color-border;
+    padding: 0.5rem;
+  }
+}

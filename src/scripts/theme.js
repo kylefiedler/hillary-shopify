@@ -51,4 +51,14 @@ $(document).ready(function() {
   if (slate.cart.cookiesEnabled()) {
     document.documentElement.className = document.documentElement.className.replace('supports-no-cookies', 'supports-cookies');
   }
+
+  $("ul#thumbs")
+  .children()
+  .click(function(e) {
+    e.preventDefault();
+    url = $(this)
+      .find("a")
+      .attr("href");
+    $("img#target").attr("src", url);
+  });
 });
